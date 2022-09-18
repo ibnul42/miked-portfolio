@@ -32,7 +32,7 @@ function Navbar() {
                 </div>
                 <ul className={`flex flex-col md:flex-row items-start md:items-center justify-center absolute left-0 md:static w-full md:w-auto transition-all duration-500 ease-in ${open ? 'opacity-100 top-20 bg-black' : 'opacity-0 md:opacity-100 top-[-500px] z-[-1]'} z-[-1] md:z-auto`}>
                     {links.map((item, index) => (
-                        <a href='#!' key={index}
+                        <a href={item.link} key={index}
                             className={`px-3 text-2xl font-semibold py-5 md:my-0 w-full cursor-pointer hover:text-indigo-300 ${activeId === item.link ? 'text-indigo-800 border-l-4 md:border-l-0 md:border-b-4 border-indigo-800' : ''}`}
                             // style={navLinkStyles}
                             onClick={() => setActiveId(item.link)}

@@ -1,9 +1,12 @@
 const Contact = () => {
     return (
-        <div className="bg-white">
+        <div className="bg-white" id="contact">
             <main className="overflow-hidden">
                 {/* Contact section */}
-                <section className="relative bg-white" aria-labelledby="contact-heading">
+                <div className="py-5">
+                    <h1 className="text-center font-bold text-3xl">Let's Connect</h1>
+                </div>
+                <section className="relative bg-white">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                         <div className="relative bg-white shadow-xl">
                             <div className="grid grid-cols-1 lg:grid-cols-3">
